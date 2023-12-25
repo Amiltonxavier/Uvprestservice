@@ -490,6 +490,7 @@ a.contacts_address {
 }
 
 .back-to-top {
+  display: none;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
@@ -501,6 +502,10 @@ a.contacts_address {
   padding: 0.5rem;
   text-decoration: none;
   transition: 0.2s ease-out;
+}
+
+a.back-to-top:hover {
+  background-color: #c0392b; /* Cor de fundo do botão ao passar o mouse */
 }
 
 /*========Footer ======*/

@@ -57,3 +57,23 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("scroll", highlightNavItem);
   window.addEventListener("resize", highlightNavItem);
 });
+
+//Button back to Top
+document.addEventListener("DOMContentLoaded", function () {
+  var backToTopButton = document.getElementsByClassName("back-to-top");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 200) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  });
+
+  backToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
